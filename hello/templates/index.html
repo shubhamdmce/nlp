@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="{% static 'lang-logo.png'%}">
+    </a>
+    <h1>Auto Timeline From Twitter on Heroku</h1>
+    <p>This is a sample Python application deployed to Heroku. It's a reasonably simple app - but a good for collecting auto timeline from twitter</p>
+    <a type="button" class="btn btn-lg btn-default" href="https://github.com/shubhamdmce/nlp/blob/master/ua.csv"><span class="glyphicon glyphicon-flash"></span> tweets collected from twitter</a>
+    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/shubhamdmce/nlp"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
+  </div>
+</div>
+<div class="container">
+  <div class="alert alert-info text-center" role="alert">
+    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://github.com/shubhamdmce/nlp" class="alert-link">Getting Started with Python on Heroku</a> tutorial.
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-info-sign"></span> Specifications Of This App </h3>
+      <ul>
+        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/shubhamdmce/nlp">Heroku Button</a> on the repository.</li>
+
+        <li>Collected sentiments from twitter using tweepy library the python code for is in a<a href="https://github.com/shubhamdmce/nlp/blob/master/twittes%20imported.py">nlp assignment.py file</a>
+        </li>
+        <li>Sentiments of unitedAIRLINES are collected and they are stored in</li>
+        <li>Y<a href="https://github.com/shubhamdmce/nlp/blob/master/ua.csv">ua.csv</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-link"></span> Sentimetns analysed</h3>
+      <ul>
+        <li>The sentiments collected from twitter of unitedAIRLINES are analysed using NLTK vader. The <a href="https://github.com/shubhamdmce/nlp/blob/master/twittes%20imported.py">NLP used</a>code,is here</li>
+       
+    
+      </ul>
+      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
+      <ul>
+        <li><a href="https://www.heroku.com/home">Heroku</a></li>
+        <li><a href="https://www.github.com/shubhamdmce/nlp">My github /heroku</a></li>
+      
+      </ul>
+    </div>
+  </div> <!-- row -->
+   <div class="alert alert-info text-center" role="alert">
+    This microservice is really helpful for data of unitedAIRLINES. you can konw how much peoples are positive regarding unitedAIRLINES. you will kow details of Travelling with unitedAIRLINES is costly,safety or not.
+  </div>
+</div>
+{% endblock %}
