@@ -15,4 +15,4 @@ $ heroku open
 ```
 or
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://tranquil-eyrie-29322.herokuapp.com/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://fast-mountain-77770.herokuapp.com/)
